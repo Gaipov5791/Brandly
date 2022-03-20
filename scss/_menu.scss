@@ -1,0 +1,25 @@
+@import "vars";
+
+.menu {
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  top: 66px;
+  right: 0;
+  text-align: center;
+  list-style: none;
+  background-color: $light-grey;
+  // display: none;
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 18px;
+    color: $accent;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
