@@ -1,0 +1,44 @@
+@import "vars";
+
+.menu {
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  flex-direction: column;
+  top: 66px;
+  right: 0;
+  text-align: center;
+  list-style: none;
+  background-color: $light-grey;
+  // display: none;
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 18px;
+    color: $accent;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    background-color: $light;
+
+    &__item + &__item {
+      margin: 0 0 0 53px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .menu {
+    display: none;
+  }
+}
