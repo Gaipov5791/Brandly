@@ -12,6 +12,12 @@
   background-color: $light-grey;
   // display: none;
 
+  &__item {
+    .active {
+      color: lighten($accent, 30%);
+    }
+  }
+
   &__item + &__item {
     margin-top: 10px;
   }
@@ -21,6 +27,10 @@
     color: $accent;
     text-decoration: none;
     text-transform: capitalize;
+
+    &:hover {
+      color: lighten($accent, 30%);
+    }
   }
 }
 
